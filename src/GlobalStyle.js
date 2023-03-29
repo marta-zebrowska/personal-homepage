@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: ${({theme}) => theme.color.mercury}
 }
 
 button {
