@@ -1,22 +1,18 @@
-import { Container } from "../../features/personalHomepage/Container/styled";
-import { Header } from "../../features/personalHomepage/Header";
-import { Skills } from "../../features/personalHomepage/Skills";
-import { skills, toLearn } from "../../features/personalHomepage/Skills/skillsList";
+import { ThemeProvider } from "styled-components";
+import { Normalize } from "styled-normalize";
+import { GlobalStyle } from "./GlobalStyle";
 
-function App() {
+import { theme } from "../../theme";
+import { PersonalHomepage } from "../../features/personalHomepage/PersonalHomepage";
+
+export const App = () => {
   return (
-    <Container>
-      <Header />
-      <Skills
-      title="My skillset includes 🛠️"
-      skills={skills}
-      />
-      <Skills
-      title="What I want to learn next 🚀"
-      skills={toLearn} 
-      />
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Normalize />
+      <GlobalStyle />
+      <PersonalHomepage />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
