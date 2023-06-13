@@ -6,17 +6,17 @@ export const Content = ({ status, repositories }) => {
   switch (status) {
     case "initial":
       return null;
-
+ 
       case "loading":
-        return <Loading />
+        return <Loading />;
 
     case "error":
-        return <ErrorBox />
+        return <ErrorBox />;
 
     case "success":
-      return <Repositories repositories={repositories} />
+      return <Repositories repositories={repositories} />;
 
     default:
-      throw new Error(`incorrect status: ${status}`)
+      throw new Error(`incorrect status: ${status}`);
   }
 };
