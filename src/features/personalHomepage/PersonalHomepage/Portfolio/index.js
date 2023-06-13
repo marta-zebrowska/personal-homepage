@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { githubUsername } from "./githubUsername";
 import { Header, MyRecentProjects, Section, StyledGithubIcon } from "./styled";
 import { Content } from "./Content";
+import { SubHeader } from "../Subheader/styled.";
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
@@ -19,15 +20,13 @@ export const Portfolio = () => {
     <Section>
       <Header>
         <StyledGithubIcon />
-        
+        <SubHeader>Portfolio</SubHeader>
         <MyRecentProjects>My recent projects</MyRecentProjects>
       </Header>
-
       <Content
         status={repositoriesStatus}
         repositories={repositories}
       />
-      
     </Section>
-  )
-}
+  );
+};
