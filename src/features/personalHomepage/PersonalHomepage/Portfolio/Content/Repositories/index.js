@@ -1,4 +1,13 @@
-import { Description, Link, Links, LinksRow, LinksValue, List, Name, Tile } from "./styled";
+import {
+  Description,
+  Link,
+  Links,
+  LinksRow,
+  LinksValue,
+  List,
+  Name,
+  Tile,
+} from "./styled";
 
 export const Repositories = ({ repositories }) => (
   <List>
@@ -11,8 +20,8 @@ export const Repositories = ({ repositories }) => (
             <LinksRow>
               <dt>Demo:</dt>
               <LinksValue>
-                <Link target="_blank" rel="noreferrer" href={homepage}>
-                  {homepage}
+                <Link href={homepage} target="_blank" rel="noreferrer noopener">
+                  Project Demo
                 </Link>
               </LinksValue>
             </LinksRow>
@@ -20,8 +29,8 @@ export const Repositories = ({ repositories }) => (
           <LinksRow>
             <dt>Code:</dt>
             <LinksValue>
-              <Link target="_blank" rel="noreferrer" href={html_url}>
-                {html_url}
+              <Link href={html_url} target="_blank" rel="noreferrer noopener">
+                Github Repository
               </Link>
             </LinksValue>
           </LinksRow>
