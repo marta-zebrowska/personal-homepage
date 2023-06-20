@@ -1,4 +1,4 @@
-import { Header, StyledList, StyledListItem, Wrapper } from "./styled";
+import { Bullet, Header, StyledList, StyledListItem, Wrapper } from "./styled";
 
 export const Skills = ({ title, skills }) => (
   <Wrapper>
@@ -8,6 +8,7 @@ export const Skills = ({ title, skills }) => (
         <StyledListItem 
         key={skill}
         >
+           <Bullet />
          {skill}
         </StyledListItem>
       ))}
