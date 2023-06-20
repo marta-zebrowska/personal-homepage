@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 import { Container } from "./Container/styled";
 import { Header } from "./Header";
 import { Portfolio } from "./Portfolio";
@@ -6,6 +7,7 @@ import { skills, toLearn } from "./Skills/skillsList";
 
 export const PersonalHomepage = () => (
     <Container>
+      <ThemeSwitcher />
       <Header />
       <Skills
       title="My skillset includes 🛠️"
