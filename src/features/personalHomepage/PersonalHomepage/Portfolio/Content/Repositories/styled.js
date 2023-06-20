@@ -7,26 +7,47 @@ export const List = styled.ul`
   list-style: none;
   padding: 0;
   grid-gap: 32px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
 `;
 
 export const Tile = styled.li`
   padding: 56px;
   margin: 0;
-  background: ${({ theme }) => theme.color.white};
-  border: 6px solid ${({ theme }) => theme.color.mercury};
+  background: ${({ theme }) => theme.color.boxBackground};
+  border: 6px solid ${({ theme }) => theme.color.tile.border};
+  border-radius: ${({ theme }) => theme.borderRadius};
   transition: border-color 0.3s;
-  box-shadow: ${({ theme }) => theme.color.mercury};
+  box-shadow: ${({ theme }) => theme.color.boxShadow};
+  &:hover {
+    border-color: ${({ theme }) => theme.color.tile.borderHover};
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    padding: 20px;
+  }
 `;
 
 export const Name = styled.h3`
   font-size: 24px;
-  color: ${({ theme }) => theme.color.mineshaft};
+  color: ${({ theme }) => theme.color.tile.header};
   margin: 0;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 16px;
+  }
 `;
 
 export const Description = styled.p`
   margin-top: 24px;
   line-height: 1.4;
+  @media (max-width: ${({ theme }) => theme.breakpoint.desktop}px) {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+  }
 `;
 
 export const Links = styled.dl`
@@ -35,6 +56,10 @@ export const Links = styled.dl`
   display: grid;
   grid-gap: 8px;
   line-height: 1.6;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 14px;
+    margin-top: 16px;
+  }
 `;
 
 export const LinksRow = styled.div`
@@ -47,8 +72,11 @@ export const LinksValue = styled.dd`
 `;
 
 export const Link = styled.a`
-  color: ${({ theme }) => theme.color.scienceblue};
+  color: ${({ theme }) => theme.color.primary};
   text-decoration: none;
-  border-bottom: 1px solid ${({ theme }) => theme.color.scienceblue};
+  border-bottom: 1px solid ${({ theme }) => theme.color.primary};
   padding-bottom: 1px;
+  &:hover {
+    border-color: unset;
+  }
 `;
