@@ -13,7 +13,7 @@ import hireMeIcon from "./images/message.svg";
 
 export const Header = () => (
   <Wrapper>
-    <Image src={myPhoto} alt="Marta"/>
+    <Image src={myPhoto} alt="Marta Żebrowska-Giers"/>
     <About>
       <ThisIs>This is</ThisIs>
       <Name>Marta Żebrowska-Giers</Name>
