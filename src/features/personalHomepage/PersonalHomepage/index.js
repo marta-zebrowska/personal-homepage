@@ -1,5 +1,6 @@
 import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 import { Container } from "./Container/styled";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Portfolio } from "./Portfolio";
 import { Skills } from "./Skills";
@@ -18,6 +19,7 @@ export const PersonalHomepage = () => (
       skills={toLearn} 
       />
       <Portfolio />
+      <Footer />
     </Container>
    );
    
