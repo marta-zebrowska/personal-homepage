@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { ButtonLink } from "../ButtonLink/styled";
+import { ReactComponent as Envelope } from "./images/message.svg";
 
 export const Wrapper = styled.header`
   max-width: 1089px;
-  margin: auto;
-  padding-top: 119px;
+  margin-top: -30px;
   display: grid;
   grid-gap: 64px;
   grid-template-columns: auto 1fr;
+  align-items: center;
   font-size: 20px;
   margin-bottom: 63px;
 
@@ -22,7 +23,8 @@ export const Wrapper = styled.header`
 
 export const Image = styled.img`
   max-width: 398px;
-  border-radius: 100%;
+  width: 40vw;
+  border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     min-width: 132px;
@@ -30,10 +32,8 @@ export const Image = styled.img`
 `;
 
 export const About = styled.div`
-  text-align: left;
   max-width: 633px;
-  margin-left: 66px;
-  padding-top: 64px;
+  padding-top: 14px;
 `;
 
 export const ThisIs = styled.p`
@@ -43,6 +43,7 @@ export const ThisIs = styled.p`
 
 export const Name = styled.h1`
   font-weight: 900;
+  font-size: 38px;
   color: ${({ theme }) => theme.color.textPrimary};
   margin: 12px 0 0 0;
 
@@ -53,7 +54,8 @@ export const Name = styled.h1`
 `;
 
 export const Content = styled.p`
-  font-weight: 400;
+max-width: 650px;  
+font-weight: 400;
   line-height: 1.4;
   margin: 36px 0 0 0;
 
@@ -61,21 +63,21 @@ export const Content = styled.p`
     margin-top: 16px;
 
     &::before {
-      content: "👩💻";
+      content: "💻";
       font-size: 20px;
       margin-right: 8px;
     }
   }
   @media (min-width: ${({ theme }) => theme.breakpoint.desktop + 1}px) {
     &::before {
-      content: "👩💻";
+      content: "💻";
       font-size: 20px;
       margin-right: 8px;
     }
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     &::before {
-      content: "👩💻";
+      content: "💻";
       font-size: 18px;
       margin-right: 8px;
     }
@@ -83,18 +85,15 @@ export const Content = styled.p`
 `;
 
 export const HireMe = styled(ButtonLink)`
-display: inline-flex;
-align-items: center;
-margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 32px;
 
-@media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-   margin-top: 24px;
-}
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin-top: 24px;
+  }
 `;
 
-export const HireMeIcon = styled.img`
-  
-  max-width: 19.23px;
-  max-height: 17.12px;
-  margin-right: 19px;
+export const HireMeIcon = styled(Envelope)`
+  margin-right: 16px;
 `;
