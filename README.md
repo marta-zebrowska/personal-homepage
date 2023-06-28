@@ -4,15 +4,18 @@
 
 <h1>My Personal Homepage </h1>
  My name is Marta and I'm an enthusiastic Frontend Developer with passion for React. I love to try new technologies and generally enjoy new experiences. This portfolio demonstrates my skill set, recent projects, and contact information.  
-Visit website [**here (click)**](https://marta-zebrowska.github.io/personal-homepage/)
 
 
-**If you want to contact me, you can do it directly here ⬇️**
+
+**If you want to contact me, you can do it directly here 👇🏻**
 <a id="contact"></a>
-<div align="center">
+
 
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue&link=https://www.linkedin.com/in/mmarta-żebrowska-giers-a27b13270/)](https://www.linkedin.com/in/marta-żebrowska-giers-a27b13270/)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-red?style=flat-square&logo=Gmail&logoColor=white&link=mailto:m.zebrowska.giers@gmail.com)](mailto:m.zebrowska.giers@gmail.com)
+
+
+You can visit my website [**here (click)**](https://marta-zebrowska.github.io/personal-homepage/)
 
 </div>
 
