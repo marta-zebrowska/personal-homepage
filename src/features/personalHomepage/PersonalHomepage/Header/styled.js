@@ -63,21 +63,21 @@ font-weight: 400;
     margin-top: 16px;
 
     &::before {
-      content: "💻";
+      content: "👩🏻‍💻";
       font-size: 20px;
       margin-right: 8px;
     }
   }
   @media (min-width: ${({ theme }) => theme.breakpoint.desktop + 1}px) {
     &::before {
-      content: "💻";
+      content: "👩🏻‍💻";
       font-size: 20px;
       margin-right: 8px;
     }
   }
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     &::before {
-      content: "💻";
+      content: "👩🏻‍💻";
       font-size: 18px;
       margin-right: 8px;
     }

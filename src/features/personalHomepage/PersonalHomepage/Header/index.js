@@ -18,8 +18,7 @@ export const Header = () => (
       <ThisIs>This is</ThisIs>
       <Name>Marta Żebrowska-Giers</Name>
       <Content>
-        I’m a passionate Frontend Developer in love with React, currently
-        looking for new job opportunities.
+      I am a junior Frontend Developer, currently looking for new job opportunities. I love to learn new things and expand my horizons. This is how I want to live 💃🏻
       </Content>
       <HireMe href={`mailto:${email}`} title={email} rel="noopener noreferrer">
         <HireMeIcon />
