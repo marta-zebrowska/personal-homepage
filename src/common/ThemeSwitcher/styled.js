@@ -3,7 +3,7 @@ import { css } from "styled-components";
 import { ReactComponent as SunIcon } from "./sun.svg";
 
 export const ThemeSwitcherWrapper = styled.div`
-   margin: 26px auto 0;
+   margin: 60px auto 0;
    display: flex;
    justify-content: flex-end;
 `;
