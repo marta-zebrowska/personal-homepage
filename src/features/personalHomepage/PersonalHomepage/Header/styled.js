@@ -39,6 +39,7 @@ export const About = styled.div`
 export const ThisIs = styled.p`
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 12px;
 `;
 
 export const Name = styled.h1`
