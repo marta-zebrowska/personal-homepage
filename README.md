@@ -2,6 +2,8 @@
 <div align="center"> 
 <h2> 👩🏻Hi! Welcome to my page </h2>
 
+<img src="public/images/readme.png">
+
 <h1>My Personal Homepage </h1>
  My name is Marta and I'm an enthusiastic Frontend Developer with passion for React. I love to try new technologies and generally enjoy new experiences. This portfolio demonstrates my skill set, recent projects, and contact information.  
 
@@ -18,6 +20,8 @@
 You can visit my website [**here (click)**](https://marta-zebrowska.github.io/personal-homepage/)
 
 </div>
+
+![Opengraph GIF](public/images/presentation.gif)
 
 <a id="technologies"></a>
 ##  👩🏻‍💻 Used Technologies:
