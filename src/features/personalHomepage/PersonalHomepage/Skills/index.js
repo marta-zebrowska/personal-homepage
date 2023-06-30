@@ -5,11 +5,9 @@ export const Skills = ({ title, skills }) => (
     <Header>{title}</Header>
     <StyledList>
       {skills.map((skill) => (
-        <StyledListItem 
-        key={skill}
-        >
-           <Bullet />
-         {skill}
+        <StyledListItem key={skill}>
+          <Bullet />
+          {skill}
         </StyledListItem>
       ))}
     </StyledList>
