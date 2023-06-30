@@ -29,6 +29,7 @@ export const StyledList = styled.ul`
   grid-gap: 8px;
   column-gap: 15px;
   padding: 0;
+  padding-top: 30px;
   line-height: 25px;
   @media (max-width: ${({ theme }) => theme.breakpoint.desktop}px) {
     grid-template-columns: repeat(2, 1fr);
